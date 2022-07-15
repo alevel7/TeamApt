@@ -59,6 +59,7 @@ main .caption {
   z-index: 6;
   font-size: 50px;
   line-height: 91%;
+  display: none;
 }
 main .caption > p span {
   font-weight: bolder;
@@ -221,7 +222,7 @@ div.instructions > .notice > img {
   height: 10px;
   bottom: 0;
   animation-name: spin;
-  animation-duration: 20s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
 }
 
