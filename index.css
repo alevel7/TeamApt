@@ -1,0 +1,274 @@
+/**/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* body {
+  
+} */
+div.container {
+  background-image: url("./images/background.jpg");
+  color: white;
+  padding: 10px;
+  height: 100vh;
+  background-color: gray;
+  position: relative;
+  overflow-y: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  width: 90px;
+  justify-content: space-between;
+}
+
+.right-text {
+  padding: 5px;
+}
+
+.right-text p:nth-child(2) {
+  color: gray;
+}
+
+main {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  overflow-y: hidden;
+  position: relative;
+}
+main .caption {
+  font-family: "Poppins";
+  letter-spacing: -0.015em;
+  position: relative;
+  z-index: 6;
+  font-size: 50px;
+  line-height: 91%;
+}
+main .caption > p span {
+  font-weight: bolder;
+}
+
+div.promo {
+  margin: 20px 0px;
+  font-family: "Inter";
+  font-size: 24px;
+}
+
+div.instructions {
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 350px;
+  margin: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.39) -213.5%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17),
+    inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+}
+
+div.instructions > p {
+  margin-bottom: 20px;
+}
+
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+div.instructions ol {
+  text-align: left;
+  padding: 0px 20px;
+}
+div.instructions ol > li {
+  margin-bottom: 5px;
+}
+div.instructions > .notice {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  padding: 10px;
+}
+div.instructions > .notice > p {
+  text-align: justify;
+  padding-left: 5px;
+}
+div.instructions > .notice > img {
+  height: 30px;
+}
+
+.coinbase {
+  max-width: 400px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.coinbase img {
+  width: 100%;
+}
+
+.left-coin {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  animation-name: upDown;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.right-coin {
+  position: fixed;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  animation-name: upDown;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ECAB03;
+  border-radius: 4px;
+  color: white;
+  margin: auto;
+  width: 200px;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+.star1{
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.star2{
+  position: absolute;
+  top: 15%;
+  left: 40%;
+}
+.star3{
+  position: absolute;
+  right: 10%;
+  top: 0;
+}
+@media only screen and (min-width: 700px) {
+  div.caption p span {
+    display: block;
+  }
+  div.promo > p span {
+    display: block;
+  }
+  .left-coin {
+    left: 30%;
+  }
+
+  .right-coin {
+    right: 30%;
+    bottom: 10%;
+  }
+}
+
+/* section {
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 900px;
+  background-image: repeating-conic-gradient(
+    transparent 0 25deg,
+   rgb(241, 241, 228) 25deg 50deg
+  );
+  width: 900px;
+  margin: auto;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 30s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+} */
+.ray_box {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  height: 10px;
+  bottom: 0;
+  animation-name: spin;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.ray2{
+  transform: rotate(72deg);
+}
+.ray3{
+  transform: rotate(108deg);
+}
+.ray4{
+  transform: rotate(144deg);
+}
+.ray5{
+  transform: rotate(175deg);
+}
+.ray {
+  border-radius:80% 80% 80% 80%;
+  opacity:0.4;
+  height: 60px;
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  bottom: -1;
+  background: -webkit-linear-gradient(right, rgba(252, 252, 250, 0), rgb(248, 248, 94), rgba(252, 252, 250, 0));
+  /* background: linear-gradient(right, yellow 0%, rgb(248, 248, 94) 50%, rgba(252, 252, 250, 0) 100%);  */
+}
+
+.ray1{
+  transform: rotate(36deg);
+}
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes upDown {
+  from {
+    transform: translateY(100px)
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
